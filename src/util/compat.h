@@ -29,11 +29,11 @@ static inline uint8_t highByte(uint16_t w)
 #define bitClear(value, bit) ((value) &= ~(1UL << (bit)))
 #define bitWrite(value, bit, bitvalue) (bitvalue ? bitSet(value, bit) : bitClear(value, bit))
 
-unsigned int word(unsigned char h, unsigned char l)
+uint16_t word(unsigned char h, unsigned char l)
 {
     return (h << 8) | l;
 }
-unsigned int word(unsigned int w)
+uint16_t word(unsigned int w)
 {
     return w;
 }
