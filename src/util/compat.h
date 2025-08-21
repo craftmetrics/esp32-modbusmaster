@@ -2,6 +2,8 @@
 #ifndef _UTIL_COMPAT_H_
 #define _UTIL_COMPAT_H_
 
+#include "esp_timer.h"
+
 /** @ingroup util_compat
     Return low byte of a 16-bit integer.
 
